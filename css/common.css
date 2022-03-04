@@ -8,7 +8,7 @@ body {
 }
 
 html {
-    background-color: #7acaff;
+    background-color: #fafafa;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -31,7 +31,7 @@ html {
 .container {
     display: flex;
     width: 60%;
-    justify-content: space-between;
+    justify-content : space-between;
 }
 
 @media screen and (max-width: 900px) {
