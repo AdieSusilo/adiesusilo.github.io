@@ -21,9 +21,31 @@
 
 .gallery-tablink > a:active {
     background-color: #c9c9c9;  
-    color: #09f;
+    color: #0099ff;
 }
 
+.add-post {
+    border: 1px solid #0099ff;
+    border-radius: 5px;
+    background-color: #0099ff;
+    color: white;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.add-post:hover {
+    cursor: pointer;
+    background-color: white;
+    color: #0099ff;
+    border: 1px solid;
+    box-shadow: 0 0 5px #c9c9c9;
+    transition: all 200ms ease-in-out;
+    
+}
+
+.add-post-mobile {
+    display: none;
+}
 
 .gallery-grid {
     display: flex;
@@ -70,6 +92,37 @@
 
 
 @media screen and (max-width: 480px) {
+    
+    .add-post {
+        display: none;
+    }
+
+    .add-post-mobile {
+        display: flex;
+        justify-content: center;
+        padding: .6em;
+        position: fixed;
+        z-index: 1;
+        bottom: 0;
+        right: 0;
+        width: 56px;
+        height: 56px;
+        border: 0px solid;
+        border-radius: 50%;
+        background-color: #0099ff;
+        color: white;
+        font-size: x-large;
+        /* text-shadow: 1.5px 1px #555; */
+        margin-bottom: 70px;
+        margin-right: 20px;
+        cursor: pointer;
+    }
+
+    .add-post-mobile:active {
+        background-color: #085d95;
+    }
+
+
     .gallery-frame {
         width: 100%;
         height: auto;
@@ -96,10 +149,6 @@
 
     .gallery-iteminfo:hover {
         background-color: transparent;
-    }
-
-    .gallery-diamond img {
-        -webkit-filter: saturate(1%) hue-rotate(222deg) brightness(400%) contrast(400%);
     }
 
 }
